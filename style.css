@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    background: #004A99;
+    color: #fff;
+    padding: 18px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    width: 50px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 14px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.social-icons img {
+    width: 26px;
+    margin-left: 12px;
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    padding: 50px 40px;
+    background: #003366;
+    color: #fff;
+}
+
+.hero-left img {
+    width: 550px;
+    border-radius: 8px;
+}
+
+.hero-right {
+    margin-left: 40px;
+    max-width: 550px;
+}
+
+.hero-right h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.highlight {
+    color: #79c7ff;
+}
+
+.hero-right p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.contact-btn {
+    margin-top: 30px;
+    padding: 14px 26px;
+    background: #008CFF;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.contact-btn:hover {
+    background: #0b7dda;
+}
