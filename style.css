@@ -1,32 +1,24 @@
-/* ------------------------------
-   GLOBAL STYLES
---------------------------------*/
+/* GLOBAL SETTINGS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 body {
-    background: #f8f9fb;
-    color: #222;
+    background: #003366;
+    color: #fff;
 }
 
-/* ------------------------------
-   NAVBAR
---------------------------------*/
+/* NAVBAR */
 .navbar {
     width: 100%;
-    background: #ffffff;
-    padding: 15px 60px;
+    background: #004a99;
+    padding: 18px 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    border-bottom: 1px solid #e6e6e6;
 }
 
 .nav-left {
@@ -36,157 +28,90 @@ body {
 }
 
 .logo {
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     object-fit: contain;
 }
 
 .nav-left h2 {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
-    color: #222;
-}
-
-.nav-links {
-    display: flex;
-    gap: 25px;
 }
 
 .nav-links a {
+    color: #fff;
     text-decoration: none;
-    color: #333;
+    margin: 0 14px;
     font-weight: 500;
-    font-size: 15px;
     transition: 0.3s;
 }
 
 .nav-links a:hover {
-    color: #007bff;
-}
-
-.social-icons {
-    display: flex;
-    gap: 12px;
+    color: #79c7ff;
 }
 
 .social-icons img {
     width: 28px;
-    height: 28px;
+    margin-left: 12px;
     cursor: pointer;
-    transition: 0.3s ease;
+    transition: 0.3s;
 }
 
 .social-icons img:hover {
     transform: scale(1.12);
 }
 
-/* ------------------------------
-   HERO SECTION
---------------------------------*/
+/* HERO SECTION */
 .hero {
     display: flex;
+    padding: 60px 40px;
     align-items: center;
     justify-content: space-between;
-    padding: 70px 90px;
-    gap: 60px;
 }
 
 .hero-left img {
-    width: 500px;
-    border-radius: 18px;
-    box-shadow: 0px 10px 25px rgba(0,0,0,0.12);
+    width: 550px;
+    border-radius: 12px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
 }
 
 .hero-right {
-    max-width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 22px; 
+    max-width: 550px;
 }
 
 .hero-right h1 {
-    font-size: 40px;
-    line-height: 1.3;
+    font-size: 2.8rem;
     font-weight: 800;
-    color: #222;
+    line-height: 1.3;
 }
 
 .highlight {
-    color: #007bff;
+    color: #79c7ff;
 }
 
 .hero-right p {
-    font-size: 17px;
-    color: #555;
+    margin-top: 18px;
+    font-size: 1.2rem;
     line-height: 1.6;
-    margin-bottom: 10px;
+    max-width: 500px;
+    color: #dceaff;
 }
 
 .contact-btn {
-    display: inline-block;
-    padding: 14px 28px;
-    background: #007bff;
+    margin-top: 30px;
+    padding: 14px 26px;
+    background: #008cff;
+    border: none;
     color: #fff;
-    text-decoration: none;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
-    border-radius: 10px;
-    transition: 0.3s ease;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
 .contact-btn:hover {
-    background: #0056cc;
-}
-
-/* ------------------------------
-   ANIMATIONS
---------------------------------*/
-.fade-in {
-    opacity: 0;
-    animation: fadeIn 1s forwards;
-}
-
-.delay-1 {
-    animation-delay: 0.3s;
-}
-
-.delay-2 {
-    animation-delay: 0.6s;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-/* ------------------------------
-   RESPONSIVE DESIGN
---------------------------------*/
-@media(max-width: 992px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        padding: 40px 30px;
-    }
-
-    .hero-right {
-        max-width: 100%;
-    }
-
-    .hero-left img {
-        width: 100%;
-    }
-}
-
-@media(max-width: 768px) {
-    .navbar {
-        padding: 15px 20px;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+    background: #0b7dda;
 }
