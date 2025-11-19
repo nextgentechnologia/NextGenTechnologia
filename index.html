@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NextGen Technologia</title>
 
-    <!-- Corrected CSS Path -->
     <link rel="stylesheet" href="style.css">
-
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 
@@ -17,8 +15,6 @@
     <!-- NAVBAR -->
     <header class="navbar">
         <div class="nav-left">
-
-            <!-- Corrected logo path -->
             <img src="logo.png" class="logo" alt="NextGen Logo">
             <h2>NextGen Technologia</h2>
         </div>
@@ -33,18 +29,32 @@
             <a href="#">Contact</a>
         </nav>
 
+        <!-- Social Icons -->
         <div class="social-icons">
-            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
-            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn"></a>
-            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/share/1VzyekQwkW/?mibextid=wwXIfr" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+            </a>
+
+            <a href="https://www.instagram.com/next_gen_technologia?igsh=ZzVpOGU3bjM3Zjk3" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+            </a>
+
+            <a href="#" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn">
+            </a>
+
+            <a href="https://wa.me/918295149044" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+            </a>
         </div>
+
+        <!-- Mobile Menu Icon -->
+        <div class="menu-btn" onclick="toggleMenu()">☰</div>
     </header>
 
     <!-- HERO SECTION -->
     <section class="hero">
         <div class="hero-left">
-
-            <!-- Corrected path -->
             <img src="hero-image.png" alt="Team Working">
         </div>
 
@@ -59,11 +69,18 @@
                 to help you achieve your goals successfully.
             </p>
 
-            <a class="contact-btn" href="https://wa.me/918295149044?text=Hello%20NextGen%20Team!%20I%20want%20to%20know%20more%20about%20your%20services.">
+            <a class="contact-btn" href="https://wa.me/918295149044">
                 CONTACT US
             </a>
         </div>
     </section>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('show');
+        }
+    </script>
 
 </body>
 </html>
