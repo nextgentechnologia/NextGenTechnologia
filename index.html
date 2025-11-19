@@ -6,61 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NextGen Technologia</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
+    <!-- ================= NAVBAR ================= -->
     <header class="navbar">
         <div class="nav-left">
-            <img src="logo.png" class="logo" alt="NextGen Logo">
+            <img src="assets/logo.png" class="logo" alt="Logo">
             <h2>NextGen Technologia</h2>
         </div>
 
         <nav class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Our Services</a>
-            <a href="#">Certificates</a>
-            <a href="#">Success Stories</a>
-            <a href="#">Reviews</a>
-            <a href="#">Contact</a>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#services">Our Services</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#stories">Success Stories</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
         </nav>
 
-        <!-- Social Icons -->
         <div class="social-icons">
-            <a href="https://www.facebook.com/share/1VzyekQwkW/?mibextid=wwXIfr" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
-            </a>
-
-            <a href="https://www.instagram.com/next_gen_technologia?igsh=ZzVpOGU3bjM3Zjk3" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
-            </a>
-
-            <a href="#" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn">
-            </a>
-
-            <a href="https://wa.me/918295149044" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-            </a>
+            <a href="https://www.facebook.com/share/1VzyekQwkW/?mibextid=wwXIfr"><img src="assets/facebook.png"></a>
+            <a href="https://www.instagram.com/next_gen_technologia?igsh=ZzVpOGU3bjM3Zjk3"><img src="assets/instagram.png"></a>
+            <a href="#"><img src="assets/linkedin.png"></a>
+            <a href="https://wa.me/918295149044"><img src="assets/whatsapp.png"></a>
         </div>
-
-        <!-- Mobile Menu Icon -->
-        <div class="menu-btn" onclick="toggleMenu()">☰</div>
     </header>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
+
+    <!-- ================= HOME SECTION ================= -->
+    <section id="home" class="hero">
         <div class="hero-left">
-            <img src="hero-image.png" alt="Team Working">
+            <img src="assets/hero-image.png" alt="Team Working">
         </div>
 
         <div class="hero-right">
-            <h1>
-                Empowering Your Growth Through<br>
+            <h1>Empowering Your Growth Through<br>
                 <span class="highlight">Expert Guidance & Solutions</span>
             </h1>
 
@@ -75,12 +60,106 @@
         </div>
     </section>
 
-    <!-- Mobile Menu Script -->
-    <script>
-        function toggleMenu() {
-            document.querySelector('.nav-links').classList.toggle('show');
-        }
-    </script>
+
+    <!-- ================= ABOUT SECTION ================= -->
+    <section id="about" class="about-section">
+        <div class="about-left">
+            <img src="assets/about-left.png">
+        </div>
+
+        <div class="about-right">
+            <h1>About Us</h1>
+            <div class="line"></div>
+
+            <p>
+                At NextGen Technologia, we deliver high-quality solutions and practical guidance.
+                Our mission is to empower students, professionals, and businesses through skill-based learning,
+                personalized mentorship, and professional services that create real impact.
+            </p>
+
+            <img src="assets/about-right.png" class="about-team">
+        </div>
+    </section>
+
+
+    <!-- ================= SERVICES SECTION ================= -->
+    <section id="services" class="services-section">
+        <h2 class="section-title">Our Services</h2>
+
+        <div class="services-grid">
+            <div class="service-card">  
+                <h3>Data Analytics</h3>
+                <p>Learn Python, Excel, Dashboards, ML basics & real projects.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Web Development</h3>
+                <p>HTML, CSS, JS, Responsive Websites, Hosting & Projects.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>HR Training</h3>
+                <p>Recruitment, Payroll, HR Policies, L&D, Employee Relations.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>Digital Marketing</h3>
+                <p>SEO, SMO, Ads, Content Planning & Brand Growth Strategies.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= CERTIFICATES SECTION ================= -->
+    <section id="certificates" class="certificates-section">
+        <h2 class="section-title">Our Certificates</h2>
+
+        <div class="cert-grid">
+
+            <div class="cert-card">
+                <img src="assets/certificate.png" alt="Internship Certificate">
+                <p>Internship Certificate</p>
+            </div>
+
+            <div class="cert-card">
+                <img src="assets/LOR.png" alt="Letter of Recommendation">
+                <p>Letter of Recommendation (LOR)</p>
+            </div>
+
+            <div class="cert-card">
+                <img src="assets/appreciation.png" alt="Certificate of Appreciation">
+                <p>Certificate of Appreciation</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= SUCCESS STORIES ================= -->
+    <section id="stories" class="stories-section">
+        <h2 class="section-title">Success Stories</h2>
+
+        <p class="center-text">Coming Soon…</p>
+    </section>
+
+
+    <!-- ================= REVIEWS ================= -->
+    <section id="reviews" class="reviews-section">
+        <h2 class="section-title">Reviews</h2>
+
+        <p class="center-text">Students love our programs ❤️</p>
+    </section>
+
+
+    <!-- ================= CONTACT SECTION ================= -->
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Contact Us</h2>
+
+        <p class="center-text">For queries or internship enrollments, message us on WhatsApp.</p>
+
+        <a class="contact-btn" href="https://wa.me/918295149044">Message on WhatsApp</a>
+    </section>
 
 </body>
+
 </html>
