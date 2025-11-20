@@ -286,8 +286,8 @@ body {
 
 .cert-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);   
+    gap: 40px;                               
     margin-top: 25px;
 }
 
@@ -296,6 +296,19 @@ body {
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+.cert-card img {
+    width: 100%;
+    height: 350px;        
+    object-fit: cover;    
+    border-radius: 12px;
+}
+.cert-card p {
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #003d73;
 }
 
 /* ================= REVIEWS ================= */
@@ -398,4 +411,5 @@ body {
         text-align: center;
     }
 }
+
 
